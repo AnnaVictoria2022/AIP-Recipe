@@ -1,0 +1,241 @@
+body{
+    background-image: url("BG recipes.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin:0;
+}
+.navigation{
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.topic{
+    display: flex;
+    justify-content: flex-end;
+    width:75%;
+}
+.topicHeader{
+    color:white;
+    text-shadow: black 2px 1px 1px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 80px;
+    margin:0px;
+    font-weight: bold;
+}
+.menuAndSearch{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left:30px;
+
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom:20px;
+}
+.link{
+    color:white;
+    text-shadow: black 2px 1px 1px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 35px;
+    margin-left:35px;
+    text-decoration: none;
+    opacity:0;
+}
+.inputTop{
+    display: flex;
+    justify-content: flex-end;
+}
+.searchTop{
+    width:50%;
+    background-color: #c9ffe5;
+    border:none;
+    border-radius: 20px;
+    padding:20px;
+    opacity:0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.aip{
+    font-size: 60px;
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-align: center;
+}
+.aipDefinition{
+    width:70%;
+    background-color: #c9ffe5;
+    box-shadow:inset 0 -3em 3em #c9ffe5,
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius:20px;
+    padding:20px;
+}
+.definition{
+    color:#009900;
+    font-family: 'Abel', sans-serif;
+    font-size:30px;
+}
+.moreLink{
+    color:#009900;
+    text-shadow: white 3px 3px 1px;
+    font-family: 'Abel', sans-serif;
+    font-size:20px;
+    text-decoration: none;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    background-color: #c9ffe5;
+    box-shadow:inset 0 -3em 3em #c9ffe5,
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius:20px;
+    padding:20px;
+}
+.productsTop{
+    display:flex;
+}
+.avoid, .eat{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avoidEat{
+    font-size: 35px;
+    font-family: 'Abel', sans-serif;
+    color:#009900;
+    text-shadow:white 3px 1px 1px;
+}
+.product{
+    color:#009900;
+    font-family: 'Abel', sans-serif;
+    font-size:25px;
+}
+.input-text{
+    display: flex;
+    justify-content: center;
+    width:70%
+}
+.search{
+    flex:1;
+    padding:20px;
+    margin-bottom:20px;
+    background-color: #c9ffe5;
+    border:none;
+    border-radius: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    border:none;
+    box-shadow:inset 0 -3em 3em #c9ffe5,
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius:10%;
+    opacity:0;
+}
+img{
+    border-radius:10%;
+    padding:20px;
+}
+.recTitle{
+    text-align: center;
+}
+.recipeTitle{
+    font-size: 30px;
+    color:#009900;
+    text-shadow: white 2px 2px 1px;
+    font-family: 'Abel', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+}
+@media all and (max-width:800px){
+    .topicHeader{
+        font-size:60px;
+        text-align: center;
+    }
+    .aip{
+        font-size: 50px;
+    }
+    .link{
+        font-size: 20px;
+        margin-left:20px;
+    }
+    img{
+        width:380px;
+        height:270px;
+    }
+}
+
+@media all and (max-width:500px){
+    body{
+        background-image:url("https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .topicHeader{
+        font-size:45px;
+        text-align: center;
+    }
+    .aip{
+        font-size: 35px;
+    }
+    .link{
+        font-size: 15px;
+        margin-left:10px;
+    }
+    .definition{
+        font-size:20px;
+    }
+    .product{
+    font-size:20px;
+    }
+    .productsTop{
+        display:flex;
+        flex-direction: column;
+    }
+    .avoidEat{
+        font-size: 25px;
+        align-self: center;
+    }
+    .avoid, .eat{
+        width:100%;
+    }
+    .recipe{
+    width:80%;
+    height:80%;
+    margin-bottom:100px;
+    }
+    img{
+        width:90%;
+        height:90%;
+    }
+    .recipeTitle{
+    font-size: 20px;
+    color:white;
+    text-shadow: #009900 2px 2px 1px;
+}
+
+}
